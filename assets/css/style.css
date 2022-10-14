@@ -21,31 +21,31 @@ nav,
 footer,
 header,
 section {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .titulo {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: tomato;
-    text-align: center;
-    margin: 0 auto 1em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 1em;
-    padding: 0 0 20px 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: tomato;
+  text-align: center;
+  margin: 0 auto 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 0 0 20px 0;
 }
 
 #enlace {
-    color: green;
-    font-size: 3rem;
+  color: green;
+  font-size: 3rem;
 }
 
-[holi^="Hola"] {
-    color: green;
-    font-size: 6rem;
+[holi^=Hola] {
+  color: green;
+  font-size: 6rem;
 }
 
 /* 
@@ -54,7 +54,6 @@ section {
 2. Especificidad
 
 3. Cascada
-*/
 
 section {
     color: red;
@@ -70,3 +69,90 @@ span {
 .rojo {
     color: purple;
 }
+
+*/
+h1 {
+  font-size: 1rem;
+}
+
+.card-container {
+  width: 350px;
+  height: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #191919;
+}
+.card-container__title {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 3px 16px;
+  background: #ffe2eb;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 208px;
+  height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container__title--small {
+  font-size: 12px;
+  width: 100px;
+  height: 16px;
+}
+.card-container__link {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 3px 16px;
+  background: #ffe2eb;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 208px;
+  height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container__link--small {
+  font-size: 12px;
+  width: 100px;
+  height: 16px;
+}
+.card-container__text {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 3px 16px;
+  background: #ffe2eb;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 208px;
+  height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container__text--small {
+  font-size: 12px;
+  width: 100px;
+  height: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

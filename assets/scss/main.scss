@@ -1,0 +1,77 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+li,
+ul,
+ol,
+blockquote,
+pre,
+code,
+input,
+textarea,
+select,
+nav,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: tomato;
+  text-align: center;
+  margin: 0 auto 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 0 0 20px 0;
+}
+
+#enlace {
+  color: green;
+  font-size: 3rem;
+}
+
+[holi^="Hola"] {
+  color: green;
+  font-size: 6rem;
+}
+
+/* 
+1. Herencia
+
+2. Especificidad
+
+3. Cascada
+
+section {
+    color: red;
+    font-size: 0.75rem;
+}
+span {
+    font-size: 1rem;
+}
+
+.verde {
+    color: green;
+}
+.rojo {
+    color: purple;
+}
+
+*/
+
+@import 'base/base';
+
+@import 'components/card-anuncio';
