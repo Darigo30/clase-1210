@@ -25,56 +25,6 @@ section {
   padding: 0;
 }
 
-.titulo {
-  font-size: 2.5em;
-  font-weight: 700;
-  color: tomato;
-  text-align: center;
-  margin: 0 auto 1em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 1em;
-  padding: 0 0 20px 0;
-}
-
-#enlace {
-  color: green;
-  font-size: 3rem;
-}
-
-[holi^=Hola] {
-  color: green;
-  font-size: 6rem;
-}
-
-/* 
-1. Herencia
-
-2. Especificidad
-
-3. Cascada
-
-section {
-    color: red;
-    font-size: 0.75rem;
-}
-span {
-    font-size: 1rem;
-}
-
-.verde {
-    color: green;
-}
-.rojo {
-    color: purple;
-}
-
-*/
-h1 {
-  font-size: 1rem;
-}
-
 .card-container {
   width: 350px;
   height: 230px;
@@ -114,18 +64,30 @@ h1 {
   font-weight: 600;
   font-size: 16px;
   padding: 3px 16px;
-  background: #ffe2eb;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  width: 208px;
-  height: 24px;
+  background-color: #007bff;
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+  color: #ffffff;
+  width: 190px;
+  height: 40px;
   margin-bottom: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  transition: 200ms all linear;
+  -webkit-transition: 200ms all linear;
+  -moz-transition: 200ms all linear;
+  -ms-transition: 200ms all linear;
+  -o-transition: 200ms all linear;
+}
+.card-container__link:hover {
+  color: #007bff;
+  background-color: #fff;
 }
 .card-container__link--small {
   font-size: 12px;
@@ -133,26 +95,70 @@ h1 {
   height: 16px;
 }
 .card-container__text {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
-  padding: 3px 16px;
-  background: #ffe2eb;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-  width: 208px;
-  height: 24px;
   margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+.card-container__text strong {
+  font-weight: 600;
 }
 .card-container__text--small {
   font-size: 12px;
   width: 100px;
   height: 16px;
+}
+
+.people-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.people-container__nav {
+  grid-column: 1/4;
+  background-color: #db96e6;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.people-container__header {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  border-radius: 25px;
+  background-color: #8CE98C;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.people-container__aside {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-color: #E69999;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
