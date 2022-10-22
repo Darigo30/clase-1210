@@ -121,13 +121,19 @@ const pokemones = [
 // Es un trozo de código que se puede reutilizar
 
 // Declaración de la función
-function saludar() {
-  console.log("Hola mundo");
+function suma(uno, dos) {
+  // const uno = 1
+  // const dos = 2;
+  const suma = uno + dos;
+  return suma
 }
 
 // Invocación de la función
-saludar();
+// suma();
 
+const sumaResultado = suma(25, 75);
+
+console.log("Función sumaResultado: ", sumaResultado);
 
 /*
 class Persona { 
