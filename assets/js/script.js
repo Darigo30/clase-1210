@@ -1,4 +1,4 @@
-// console.log("Holi holi") // String
+console.log("Holi holi") // String
 
 // Tipos de datos
 // String
